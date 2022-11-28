@@ -1,7 +1,7 @@
 const sequelize = require('./conexion');
 
 init = function(){
-    sequilize.authenticate().then(() => {
+    sequelize.authenticate().then(() => {
         console.log("Conexion establecida con la base de datos");
 
     }).catch(err =>{
