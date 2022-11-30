@@ -1,5 +1,5 @@
 const sequelize = require('./conexion');
-const registros = require('./Tablas/Registros');
+const Registros = require('./Tablas/Registros');
 
 init = function(){
     sequelize.authenticate().then(() => {
@@ -14,10 +14,10 @@ init = function(){
 getUsuarios = function(callback){
 
 //select * from registros
-registros.findAll().then(registros => callback(registros));
+Registros.findAll().then(registro => callback(registro));
 
 }
 //Get export
-module.export.getUsuarios = getUsuarios;
+module.exports.getUsuarios = getUsuarios;
 
 module.exports.init = init;

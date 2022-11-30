@@ -11,3 +11,4 @@ mariadb.init();
 app.get("/", function(request, response){
 response.send("backend funcionando")
 })
+require('./app/Rutas/registrosRouter')(app, mariadb);

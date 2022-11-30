@@ -30,4 +30,8 @@ allowNull: false
         type: Sequelize.DataTypes.INTEGER,
         allowNull: false
     },
+},{
+    freezeTableName: true, 
+    timestamps: false, 
 });
+module.exports = Registros;
