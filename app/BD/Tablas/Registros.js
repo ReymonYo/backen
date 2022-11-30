@@ -30,6 +30,13 @@ allowNull: false
         type: Sequelize.DataTypes.INTEGER,
         allowNull: false
     },
+    AreaDeTrabajo: {
+        type: Sequelize.DataTypes.STRING,
+        
+    },
+    FechaDeIngreso: {
+        type: Sequelize.DataTypes.STRING
+    }
 },{
     freezeTableName: true, 
     timestamps: false, 
